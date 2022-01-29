@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(157, 222, 255);
+}
+
+.flex-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    width: 800px;
+    border-radius: 5px;
+}
+
+.block1,
+.block2,
+.block3,
+.block4,
+.block5 {
+    display: flex;
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+    flex-direction: column;
+}
+
+.block1, .block3 {
+    float: left;
+}
+
+.block2, .block4 {
+    float: right;
+}
+
+.block5 {
+    margin-top: 140px;
+    height: 140px;
+}
+
+@media only screen and (max-width: 760px) {
+    .block5 {
+    margin-top: 250px;
+    }
+}
+
+h2 {
+    color: dimgray;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+form span,
+form input,
+form select,
+form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: dimgray;
+}
+
+form span,
+form input.formfield,
+form select,
+form textarea {
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+}
+
+form input,
+form select {
+    width: 350px;
+    height: 40px;
+}
+
+form textarea {
+    /* flex: 1; */
+    width: 100%;
+    resize: none;
+}
+
+
+form select {
+    opacity: 0.8;
+    outline: none;
+    color: dimgray;
+}
+
+form select:focus{
+    border: 1.5px solid dodgerblue;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    float: right;
+    font-size: 1em;
+    color: white;
+    background-color: dodgerblue;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* #alert {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+} */
+
+
+.inputField {
+    position: relative;
+}
+
+.inputField input, .inputField textarea {
+    /* padding: 8px 20px; */
+    padding-top: 16px;
+}
+
+.inputField input:focus, .inputField textarea:focus, .inputField select:focus {
+    outline: none;
+    border: 1.5px solid dodgerblue;
+}
+
+.inputField span {
+    pointer-events: none;
+    font-size: 0.8em;
+    opacity: 0.5;
+    position: absolute;
+    border: none;
+    /* padding-left: 8px; */
+    left: 4px;
+    top: 40%;
+    -webkit-transform: translateY(-60%);
+    transform: translateY(-60%);
+    cursor: text;
+}
+
+.block5 span {
+    top: 20px;
+}
+
+.inputField input:focus+span,
+.inputField input:not(:placeholder-shown)+span,
+.inputField textarea:focus+span,
+.inputField textarea:not(:placeholder-shown)+span {
+    top: 6px;
+    color: dodgerblue;
+    font-weight: bold;
+    -webkit-transform: scale(0.7) translateY(-40%) translateX(-8.5px);
+    transform: scale(0.7) translateY(-40%) translateX(-8.5px);
+}
+
+
+
+.inputField input,
+.inputField span,
+.inputField textarea {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}

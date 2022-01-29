@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./js/index.js"></script>
+    <title>Formulário Orçamento</title>
+</head>
+<body>
+    <div class="flex-container">
+        <form class="" action="#" method="POST">
+            <h2>Peça seu orçamento agora mesmo!</h2>
+                
+                <div class="block1 inputField">
+                    <!--name-->
+                    <input class="formfield" type="text" required name="nome" id="formvalitade" placeholder=" ">
+                    <span class="inspan">Nome</span>
+                </div>
+                
+                
+                <div class="block2 inputField">
+                    <!-- email -->
+                    <input type="email" class="formfield" required name="email" id="formvalidade" placeholder=" ">
+                    <span class="inspan">E-mail</span>
+                </div>
+                
+                
+                <div class="block3 inputField">
+                    <!-- tel number -->
+                    <input type="tel" class="formfield" required name="tel" id="formvalidate" placeholder=" ">
+                    <span class="inspan">Telefone</span>
+                </div>
+
+                <div class="block4">
+                    <!--service type-->
+                    <select required id="formvalidate" name="service">
+                        <option value="0" default selected disabled>Escolha o serviço que deseja</option>
+                        <option value="1">Serviço 01</option>
+                        <option value="2">Serviço 02</option>
+                        <option value="3">Serviço 03</option>
+                    </select>
+                </div>
+                
+                <div class="block5 inputField">
+                    <textarea required id="formvalidate" name="message" placeholder=" "></textarea>
+                    <span class="textspan">Mensagem</span>
+                </div>
+                
+                <div>
+                    <!-- <p id="alert"></p> -->
+                    <input class="button" onclick="formValidate()" type="submit" value="Enviar">
+                </div>
+        </form>
+    </div>
+
+</body>
+</html>
