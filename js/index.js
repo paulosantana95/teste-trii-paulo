@@ -1,4 +1,5 @@
 const form = document.querySelector('form');
+const toastr = document.querySelector('#toastr');
 
 form.addEventListener('submit', event => {
     event.preventDefault();
@@ -8,12 +9,11 @@ form.addEventListener('submit', event => {
 
 
 function sucessSubmit() {
-    if (form) {
-        alert("Enviado com Sucesso!");
-    } 
-}
+    toastr.style.display="block";
+    
+    let timeoutId = setTimeout(() => {
+        toastr.style.display="none";
+}, 4000);
 
-
-// var select = document.getElementById('language');
-// 	var value = select.options[select.selectedIndex].value;
-// 	console.log(value); // pt
+    form.reset();
+};

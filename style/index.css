@@ -104,7 +104,7 @@ form select:focus{
     border: 1.5px solid dodgerblue;
 }
 
-
+/* botão */
 .button {
     display: flex;
     border: none;
@@ -130,6 +130,8 @@ form select:focus{
     text-align: center;
 } */
 
+
+/* Efeito do span dentro do input */
 
 .inputField {
     position: relative;
@@ -187,4 +189,29 @@ form select:focus{
     transition: all 0.2s;
     -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+
+/* toastr indicando sucesso de envio! */
+
+.toastr {
+    position: fixed;
+    display: none;
+    color: #DBE6E6;
+    font-weight: bolder;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 999999;
+    pointer-events: none;
+    top: 10px;
+    right: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #3BA58E;
+    border-radius: 8px;
+    padding: 2%;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 260px;
 }
