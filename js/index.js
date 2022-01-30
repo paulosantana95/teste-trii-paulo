@@ -11,7 +11,7 @@ form.addEventListener('submit', event => {
 function sucessSubmit() {
     toastr.style.display="block";
     
-    let timeoutId = setTimeout(() => {
+    setTimeout(() => {
         toastr.style.display="none";
 }, 4000);
 
