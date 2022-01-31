@@ -1,19 +1,27 @@
 const form = document.querySelector('form');
-const toastr = document.querySelector('#toastr');
+
 
 form.addEventListener('submit', event => {
     event.preventDefault();
 
     sucessSubmit();
+
 });
 
 
 function sucessSubmit() {
-    toastr.style.display="block";
+    const toastr = document.querySelector('#toastr');
+
+    toastr.className="show";
     
-    setTimeout(() => {
-        toastr.style.display="none";
-}, 4000);
+    setTimeout(function(){
+        toastr.className = toastr.className.replace("show", ""); 
+}, 3000);
 
     form.reset();
-};
+
+}
+// setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+// }
+
+

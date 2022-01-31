@@ -195,23 +195,49 @@ form select:focus{
 
 /* toastr indicando sucesso de envio! */
 
-.toastr {
+#toastr {
+    visibility: hidden;
     position: fixed;
-    display: none;
-    color: #DBE6E6;
+    color: white;
     font-weight: bolder;
     font-size: 0.8em;
     text-transform: uppercase;
     text-align: center;
-    z-index: 999999;
+    z-index: 1;
     pointer-events: none;
     top: 10px;
     right: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-    background-color: #3BA58E;
+    background-color: #1BC537;
     border-radius: 8px;
     padding: 2%;
-    margin-top: 30px;
-    margin-right: 20px;
-    width: 260px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 250px;
+}
+
+/* fadeIn effect */
+#toastr.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
