@@ -104,7 +104,7 @@ form select:focus{
     border: 1.5px solid dodgerblue;
 }
 
-/* botão */
+/* button style */
 .button {
     display: flex;
     border: none;
@@ -124,14 +124,8 @@ form select:focus{
     cursor: pointer;
 }
 
-/* #alert {
-    color: red;
-    margin-top: 10px;
-    text-align: center;
-} */
 
-
-/* Efeito do span dentro do input */
+/* placeholder span effect */
 
 .inputField {
     position: relative;
@@ -193,7 +187,7 @@ form select:focus{
 
 
 
-/* toastr indicando sucesso de envio! */
+/* toastr sucess submit */
 
 #toastr {
     visibility: hidden;
@@ -216,7 +210,9 @@ form select:focus{
     width: 250px;
 }
 
-/* fadeIn effect */
+/* fadeIn and FadeOut effect */
+
+
 #toastr.show {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;

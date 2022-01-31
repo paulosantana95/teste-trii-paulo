@@ -8,32 +8,30 @@
     <title>Formulário Orçamento</title>
 </head>
 <body>
-    <div class="" id="toastr">Enviado com sucesso.</div>
+    <div class="" id="toastr">Enviado com sucesso</div> <!--snackbar or toastr-->
     <div class="flex-container">
-        <form class="" action="#" method="POST">
+        <form class="" action="#" method="POST"> <!--form start-->
+            
             <h2>Peça seu orçamento agora mesmo!</h2>
                 
-                <div class="block1 inputField">
-                    <!--name-->
+                <div class="block1 inputField"><!--name start-->
                     <input class="formfield" type="text" required name="nome" id="name" placeholder=" ">
                     <span class="inspan">Nome</span>
-                </div>
+                </div><!--name end-->
                 
                 
-                <div class="block2 inputField">
-                    <!-- email -->
+                <div class="block2 inputField"><!--email adress start-->
                     <input type="email" class="formfield" required name="email" id="email" placeholder=" ">
                     <span class="inspan">E-mail</span>
-                </div>
+                </div><!--email adress end-->
                 
                 
-                <div class="block3 inputField">
-                    <!-- tel number -->
+                <div class="block3 inputField"><!--tel number start-->
                     <input type="tel" class="formfield" required name="tel" id="tel" placeholder=" ">
                     <span class="inspan">Telefone</span>
-                </div>
+                </div><!--tel number end-->
 
-                <div class="block4">
+                <div class="block4"><!--select option start-->
                     <!--service type-->
                     <select required class="" id="services" name="services">
                         <option value="" selected disabled>Escolha o serviço que deseja</option>
@@ -41,18 +39,18 @@
                         <option value="2">Serviço 02</option>
                         <option value="3">Serviço 03</option>
                     </select>
-                </div>
+                </div><!--select option end-->
                 
-                <div class="block5 inputField">
+                <div class="block5 inputField"><!--text area start-->
                     <textarea required class="" id="message" name="message" placeholder=" "></textarea>
                     <span class="textspan">Mensagem</span>
-                </div>
+                </div><!--text area end-->
                 
-                <div>
+                <div><!--button start-->
                     <!-- <p id="alert"></p> -->
                     <button class="button" type="submit">Enviar</button>
-                </div>
-        </form>
+                </div><!--button end-->
+        </form><!--form end-->
     </div>
 
     <script src="./js/index.js"></script>
